@@ -390,7 +390,6 @@ input[type=text], input[type=email] {
   color: black;
   height: 10%;
   font-size: 1.5rem;
-  text-transform: uppercase;
   font-family: "Lato", sans-serif;
   width: calc(80%/2);
   padding: 0px 20px 20px;
@@ -439,11 +438,13 @@ textarea {
   text-transform: uppercase;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .messageSubmit button:hover,
 .messageSubmit button:focus {
   color: #F8FB05;
+  scale: 1.03;
 }
 
 main {
@@ -609,7 +610,6 @@ input[type=text], input[type=email] {
   color: black;
   height: 10%;
   font-size: 1.5rem;
-  text-transform: uppercase;
   font-family: "Lato", sans-serif;
   width: calc(80%/2);
   padding: 0px 20px 20px;
@@ -658,11 +658,13 @@ textarea {
   text-transform: uppercase;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .messageSubmit button:hover,
 .messageSubmit button:focus {
   color: #F8FB05;
+  scale: 1.03;
 }
 
 .blogFieldset {
