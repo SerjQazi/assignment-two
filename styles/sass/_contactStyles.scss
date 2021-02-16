@@ -1,0 +1,50 @@
+main {
+  background-color: $ice;
+  height: auto;
+}
+
+.contactInfo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fieldsetContainer {
+  width: 60%;
+}
+
+fieldset.contactFieldset {
+  position: relative;
+  bottom: 120px;
+  background-color: white;
+  box-shadow: 15px 15px 3px $brightYellow;
+}
+
+.contactDes {
+  width: 23%;
+  padding-top: 140px;
+  i {
+    font-size: 2.3rem;
+    color: $everGreen;
+    letter-spacing: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  p {
+    font-family: $lato;
+    font-size: 1.5rem;
+    line-height: 22px;
+    letter-spacing: 4px;
+  }
+}
+
+.contactDes i:hover,
+.contactDes i:focus {
+  color: $brightYellow;
+  
+}
+
+.email {
+  padding-bottom: 20px;
+  letter-spacing: 2.5px;
+  margin-top: 15px;
+}
+

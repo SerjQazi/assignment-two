@@ -1,0 +1,67 @@
+fieldset{
+     width: 100%;
+     border:none;
+}
+
+.contactEmail{
+     display: flex;
+     justify-content: center;
+}
+
+input[type=text],input[type=email]{
+     border: none; 
+     border-bottom: 2px solid $everGreen;
+     background-color:transparent;
+     color: black;
+     height: 10%;
+     font-size: 1.5rem;
+     text-transform: uppercase;
+     font-family: $lato;
+     width: calc(80%/2);
+     padding: 0px 20px 20px;
+     margin-top: 60px;
+     letter-spacing: 3px;
+}
+
+input[type=email]{
+     margin-left: 10px;
+}
+
+.messageSubmit{
+     display:flex;
+     flex-direction: column;
+     margin: 0 9% 0;
+}
+
+textarea{
+     margin-top: 50px;
+     padding: 30px 20px 0px;
+     outline: none;
+     border: 2px solid $everGreen;
+     background-color: transparent;
+     resize: none;
+     width: auto; 
+     min-height: 200px;
+     font-family:$lato;
+     font-size: 1.5rem;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+}
+
+.messageSubmit button{
+     font-size: 2rem;
+     font-family: $kumarOne;
+     color:white;
+     width: 100%;
+     margin: 50px 0;
+     padding: 20px 0 10px;
+     background-color: $everGreen;
+     border: none;
+     text-transform: uppercase;
+     transition: 0.3s ease-in-out;
+}
+
+.messageSubmit button:hover,
+.messageSubmit button:focus{
+     color: $brightYellow;
+}

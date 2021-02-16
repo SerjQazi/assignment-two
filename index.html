@@ -2,18 +2,157 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment Two</title>
-  <link rel="stylesheet" href="./styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanctuary Helpers</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script src="https://kit.fontawesome.com/419f914d10.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  <header>
-    <h1>Assignment Two</h1>
+  <header class="indexHeader" id="home">
+    <div class="wrapper">
+      <nav class="mainNav">
+        <label class="burger" for="toggle"><i class="fa fa-bars"></i></label>
+        <input class="burgerBox" type="checkbox" id="toggle" name="toggle">
+        <ul class="navMenu">
+          <li><a href="./index.html#home">Home</a></li>
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Sanctuary Helpers</h1>
+    </div>
   </header>
 
+  <section class="mainDiscoverContainer" id="about">
+    <div class="blueCouchContainer">
+      <img src="./assets/header-box.png" alt="Two blue couches with green pillows on them">
+    </div>
+    <div class="wrapper">
+      <div class="discoverContainer">
+        <div class="discoverTxtContainer">
+          <h3>Discovering New Materials</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi praesentium aut vero nam quisquam delectus
+            fugiat. Culpa voluptatem debitis sit, blanditiis quisquam, perferendis doloremque dolores eligendi
+            consequuntur recusandae velit architecto maxime officia beatae temporibus saepe earum quibusdam maiores. Quo
+            repellat odio animi unde, magni cumque blanditiis totam eligendi officiis vero laboriosam voluptatem maiores
+            corrupti nemo nihil delectus aspernatur eius officia minima, ut quaerat voluptates. Minus repudiandae sunt
+            dolor amet voluptates.</p>
+          <div class="buttonOneContainer">
+            <a class="buttonOne" href="#">Find Out More</a>
+          </div>
+        </div> <!-- end of discoverTxtContainer -->
+        <div class="greyCouch">
+          <img src="./assets/small-box.jpg" alt="Grey Couch in the living room under a paiting">
+        </div>
+      </div> <!-- end of discoverContainer -->
+    </div> <!-- end of wrapper -->
+  </section>
+
+  <section class="indexGallery">
+    <div class="wrapper">
+      <div class="threeImgContainer">
+        <img src="./assets/gallery-image-1.jpg" alt="a green dresser infront of a white brick wall">
+        <img src="./assets/gallery-image-2.jpg" alt="rustic orange couch with a dark coffee table in the living room">
+        <img src="./assets/gallery-image-3.jpg" alt="rustic creative chair for the common room">
+      </div>
+    </div>
+    <div class="aboutSection">
+      <div class="wrapper">
+        <ul>
+          <li>
+            <a href="#home"><i class="fas fa-home"></i></a>
+            <h3>Customized Offer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit aliquid ipsum consectetur
+              beatae maxime dicta placeat, deserunt enim excepturi.</p>
+          </li>
+          <li>
+            <a href="./blog.html#community"><i class="fas fa-users"></i></a>
+            <h3>Community</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui necessitatibus cum, magnam nam rem neque
+              perferendis hic molestiae adipisci minus!</p>
+          </li>
+          <li>
+            <a href="./blog.html"><i class="fas fa-file"></i></a>
+            <h3>Blog</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, placeat commodi. Totam, quam aliquam.
+              Nemo eum quibusdam nulla cupiditate non.</p>
+          </li>
+          <li>
+            <a href="./contact.html"><i class="fas fa-phone"></i></a>
+            <h3>Get In Touch</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptate sit consequuntur cum dicta
+              id quod aliquid iste nesciunt facere?</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="indexArticle">
+    <div class="wrapper">
+      <div class="groupProgramsContainer">
+        <div class="ImgContainer">
+          <img src="./assets/left-image.jpg" alt="abstract white dining table set with chairs">
+        </div>
+        <div class="groupProgramsText">
+          <h3>Group Programs</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt temporibus ipsum repellat reprehenderit
+            ab necessitatibus officia ea id atque impedit! Harum quibusdam numquam sed quia distinctio deleniti
+            voluptates voluptate.</p>
+          <div class="buttonOneContainer">
+            <a href="" class="buttonOne"> Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="newLocationsContainer">
+        <div class="ImgContainer">
+          <img src="./assets/right-image.jpg" alt="wicker outdoor pool chair and side table">
+        </div>
+        <div class="newLocationsText">
+          <h3>New Locations</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptates ab doloribus eius illum, rem
+            aut sunt explicabo obcaecati corrupti deserunt laudantium, repellat fuga molestias omnis optio magni
+            necessitatibus unde?</p>
+          <div class="buttonOneContainer">
+            <a href="" class="buttonOne"> Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="searchStyle">
+    <img src="./assets/banner-image.jpg" alt="rustic living room set with coffee leather couch">
+    <div class="wrapper">
+      <div class="searchText">
+        <h3>Search By Style</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi minima vel, laborum ratione obcaecati
+          maxime nesciunt numquam facilis cum minus omnis, eaque labore consequuntur. Doloribus, aperiam numquam culpa
+          laudantium dignissimos blanditiis atque asperiores, perspiciatis harum repellat suscipit possimus? Fugit magni
+          expedita harum laborum aperiam quidem at, exercitationem architecto debitis error! consequuntur. Doloribus,
+          aperiam numquam culpa laudantium dignissimos blanditiis.</p>
+        <div class="buttonOneContainer">
+          <a href="" class="buttonOne">Find Out More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright<i class="far fa-copyright"></i> 2019 HackerYou</p>
+  </footer>
 </body>
 
 </html>
