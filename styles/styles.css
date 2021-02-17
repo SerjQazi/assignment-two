@@ -383,6 +383,10 @@ fieldset {
           justify-content: center;
 }
 
+input:required {
+  all: unset;
+}
+
 input[type=text], input[type=email] {
   border: none;
   border-bottom: 2px solid #065635;
@@ -585,7 +589,7 @@ section.comments {
 }
 
 .commentImg {
-  width: 50%;
+  min-width: 13%;
   margin: 10px 30px 30px 0;
 }
 
@@ -601,6 +605,10 @@ fieldset {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+input:required {
+  all: unset;
 }
 
 input[type=text], input[type=email] {
@@ -684,6 +692,14 @@ textarea {
 input.blogInput,
 input.blogEmail {
   width: 50%;
+}
+
+.commentTxt {
+  min-width: 90%;
+}
+
+.commentTxt p {
+  word-break: break-word;
 }
 
 .commentTxt p:first-child {
@@ -1244,11 +1260,11 @@ footer p {
   .mainTextContainer .blogText:last-child {
     padding-bottom: 20px;
   }
+  .blogText {
+    line-height: 22px;
+  }
   .comments h3 {
     text-align: center;
-  }
-  .commentImg {
-    width: 100%;
   }
 }
 

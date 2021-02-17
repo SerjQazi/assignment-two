@@ -1,28 +1,31 @@
+// get the current date information stored in variables
+let today = new Date();
+let dayOfWeek = today.getDay();
+let month = today.getMonth();
+let date = today.getDate();
+let year = today.getFullYear();
 
+// convert day of week to string 
+const dayString = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
+// convert month of year to string
+const monthString = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-// on click on the submit button, add current date to user comment
-let submitButton = addEventListener('click', function() {
-  
-  let today = new Date();
-  let dayOfWeek = today.getDay();
-  let month = today.getMonth();
-  let date = today.getDate();
-  let year = today.getFullYear();
-  
-  
-  // convert day of week to string 
-  const dayString = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  
-  // convert month of year to string
-  const monthString = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-  
-  // return currentDate
-  
-  let currentDate = dayString[dayOfWeek] + ` ` + monthString[month] + ` ${date}, ${year}`
-  
-  console.log(currentDate)
-});
+let ending = 'th';
+
+if (date === 1 || date === 21 || date === 31) {
+  ending = 'st';
+};
+
+if (date === 2 || date === 22) {
+  ending = 'nd'
+};
+
+if (date === 3 || date === 23) {
+  ending = 'rd';
+};
+
+let currentDate = `${dayString[dayOfWeek]} ${monthString[month]} ${date}${ending}, ${year}`
 
 //submit event for when the submit button is clicked
 const blogComment = document.querySelector('form');
@@ -30,20 +33,37 @@ const blogComment = document.querySelector('form');
 blogComment.addEventListener('submit', function (event) {
   event.preventDefault();
 
-  // console.log('Comment Submitted!');
+  const nameInput = document.getElementById('name');
+  const name = nameInput.value;
 
-  const commentSection = document.getElementById('message');
-  const comment = commentSection.value;
+  const commentInput = document.getElementById('message');
+  const comment = commentInput.value;
 
+  // if there is a comment to add to the comment section...
   if (comment) {
 
-    const commentParagraph = document.createElement('p');
-    commentParagraph.appendChild(document.createTextNode(comment));
+    // create a new <div> to put the new comment into
+    const commentContainer = document.createElement('div');
+    commentContainer.classList.add("commentContainer");
 
-    const newComment = document.getElementById('commentTxt');
-    newComment.appendChild(commentParagraph);
+    // profile picture, date and comment that will be appended
+    commentContainer.innerHTML = 
+    `<div class="commentImg">
+      <img src="https://picsum.photos/600" alt="User's Profile Image" />
+    </div>
+    <div class="commentTxt" id="commentTxt">
+      <p><strong>${currentDate} ${name}</strong></p>
+      <p>
+        ${comment}
+      </p>
+    </div>`
 
-  }
+    const commentSection = document.querySelector('section.comments');
+    commentSection.insertBefore(commentContainer, blogComment);
 
+    // clear out the input field, set the value to nothing
+    nameInput.value = '';
+    commentInput.value = '';
+  };
 
 });
